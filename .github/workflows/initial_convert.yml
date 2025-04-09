@@ -1,0 +1,57 @@
+name: Render all .drawio files
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render-diagrams:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Find all .drawio files
+        id: find_drawio
+        run: |
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          find . -name '*.drawio' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      - name: Render all .drawio to .svg and .png
+        if: steps.find_drawio.outputs.files != ''
+        uses: docker://ghcr.io/racklet/render-drawio-action:v1
+        with:
+          formats: 'svg'
+          files: ${{ steps.find_drawio.outputs.files }}
+        id: render
+
+      - name: Move rendered files to generated/ folders
+        run: |
+          IFS=$'\n'
+          echo "${{ steps.find_drawio.outputs.files }}" | while read -r file; do
+            base_name=$(basename "$file" .drawio)
+            parent_dir=$(dirname "$file")
+            mkdir -p "$parent_dir/generated"
+            for ext in svg png; do
+              rendered_file="${parent_dir}/${base_name}.${ext}"
+              if [ -f "$rendered_file" ]; then
+                mv "$rendered_file" "$parent_dir/generated/"
+              fi
+            done
+          done
+      - name: Debug generated folder structure
+        run: ls -lR */generated || true
+
+      - name: Commit & push rendered files
+        run: |
+          git remote -v
+          git config user.name "cuongceg"
+          git config user.email "domanhcuong2004thptahhnd@gmail.com"
+          git add */generated/*.svg || true
+          git commit -m "Auto-render all .drawio files to .svg/.png" || echo "Nothing to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
