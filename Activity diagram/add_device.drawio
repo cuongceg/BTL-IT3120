@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.3">
   <diagram name="Trang-1" id="D4Qvfmtcilv9xH6Jxy6D">
-    <mxGraphModel dx="2316" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2722" dy="1022" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -118,7 +118,7 @@
         <mxCell id="G73VtsGW4LE3LaxtFKl6-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="G73VtsGW4LE3LaxtFKl6-2" source="G73VtsGW4LE3LaxtFKl6-32" target="G73VtsGW4LE3LaxtFKl6-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G73VtsGW4LE3LaxtFKl6-32" value="Kiểm tra quyền chụp ảnh và quay video" style="whiteSpace=wrap;html=1;rounded=1;" parent="G73VtsGW4LE3LaxtFKl6-2" vertex="1">
+        <mxCell id="G73VtsGW4LE3LaxtFKl6-32" value="Kiểm tra quyền truy cập máy ảnh" style="whiteSpace=wrap;html=1;rounded=1;" parent="G73VtsGW4LE3LaxtFKl6-2" vertex="1">
           <mxGeometry x="142.5" y="110" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="G73VtsGW4LE3LaxtFKl6-13" value="Yêu cầu quyền chụp ảnh và quay video" style="rounded=1;whiteSpace=wrap;html=1;" parent="G73VtsGW4LE3LaxtFKl6-2" vertex="1">
@@ -219,8 +219,14 @@
         <mxCell id="Q3FxY0ersZj1kQSqEpKL-18" value="Thông báo kết nối thành công" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="G73VtsGW4LE3LaxtFKl6-2">
           <mxGeometry x="22.5" y="1810" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q3FxY0ersZj1kQSqEpKL-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="G73VtsGW4LE3LaxtFKl6-2" source="Q3FxY0ersZj1kQSqEpKL-19" target="G73VtsGW4LE3LaxtFKl6-82">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Q3FxY0ersZj1kQSqEpKL-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="G73VtsGW4LE3LaxtFKl6-2" source="Q3FxY0ersZj1kQSqEpKL-19" target="G73VtsGW4LE3LaxtFKl6-82">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="373" y="1890" />
+              <mxPoint x="-127" y="1890" />
+              <mxPoint x="-127" y="1385" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="Q3FxY0ersZj1kQSqEpKL-19" value="Thông báo kết nối thất bại" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="G73VtsGW4LE3LaxtFKl6-2">
           <mxGeometry x="312.5" y="1810" width="120" height="60" as="geometry" />
