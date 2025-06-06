@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
   <diagram name="Trang-1" id="X2tpXtrFmzFixdNBfU9U">
-    <mxGraphModel dx="3473" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2605" dy="1403" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -119,9 +119,6 @@
         <mxCell id="nEWbSJInQm02GCh9Orcp-37" value="Không hợp lệ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="4X7oAuJ8XmqaDcBPzvsq-7" vertex="1">
           <mxGeometry x="110" y="848" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8eVyBXi7-VKffHKaDOEn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="4X7oAuJ8XmqaDcBPzvsq-7" source="nEWbSJInQm02GCh9Orcp-38" target="8eVyBXi7-VKffHKaDOEn-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="nEWbSJInQm02GCh9Orcp-38" value="Cài đặt các thông số điều khiển lên thiết bị IoT" style="rounded=1;whiteSpace=wrap;html=1;" parent="4X7oAuJ8XmqaDcBPzvsq-7" vertex="1">
           <mxGeometry x="290" y="900" width="120" height="60" as="geometry" />
         </mxCell>
@@ -176,9 +173,6 @@
         </mxCell>
         <mxCell id="nEWbSJInQm02GCh9Orcp-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.525;entryY=0.393;entryDx=0;entryDy=0;entryPerimeter=0;" parent="4X7oAuJ8XmqaDcBPzvsq-7" source="nEWbSJInQm02GCh9Orcp-30" target="nEWbSJInQm02GCh9Orcp-77" edge="1">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8eVyBXi7-VKffHKaDOEn-4" value="Đợi phản hồi từ thiết bị" style="rounded=1;whiteSpace=wrap;html=1;" parent="4X7oAuJ8XmqaDcBPzvsq-7" vertex="1">
-          <mxGeometry x="290" y="990" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nEWbSJInQm02GCh9Orcp-40" value="Hợp lệ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="4X7oAuJ8XmqaDcBPzvsq-7" vertex="1">
           <mxGeometry x="260" y="848" width="60" height="30" as="geometry" />
